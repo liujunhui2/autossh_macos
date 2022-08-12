@@ -1,5 +1,5 @@
 # autossh in Macos
-autossh with launchctl in Macos (plist)
+Enable autossh service with launchctl in Macos (plist)
 
 ## Files
 Put com.user.sshtunnel.plist in ~/Library/LaunchAgents
