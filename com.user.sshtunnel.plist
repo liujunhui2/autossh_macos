@@ -2,32 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>EnvironmentVariables</key>
-	<dict>
-		<key>AUTOSSH_PATH</key>
-		<string>/usr/bin/ssh</string>
-	</dict>
-	<key>Label</key>
-   	<string>com.user.sshtunnel</string>
-   	<key>ProgramArguments</key>
-   	<array>
-   		<string>/path/to/your/autossh</string>
-   		<string>-M</string>
-   		<string>0</string>
-   		<string>-o</string>
-   		<string>ServerAliveInterval 10</string>
-   		<string>-o</string>
-   		<string>ServerAliveCountMax 3</string>
-   		<string>-D</string>
-   		<string>1080</string>
-   		<string>-N</string>
-   		<string>-i</string>
-   		<string>/path/to/your/key</string>
-   		<string>user@your.server</string>
-   	</array>
-   	<key>KeepAlive</key>
-	  	<true/>
-   	<key>RunAtLoad</key>
-      		<true/>
+    <key>Label</key>
+        <string>com.user.sshtunnel</string>
+    <key>ProgramArguments</key>
+        <array>
+            <string>/usr/bin/ssh</string>
+            <string>-o</string>
+            <string>ServerAliveInterval 10</string>
+            <string>-o</string>
+            <string>ServerAliveCountMax 3</string>
+            <string>-D</string>
+            <string>1080</string>
+            <string>-N</string>
+            <string>-i</string>
+            <string>/Users/lijunhui/.ssh/id_rsa</string>
+            <string>ec2-user@52.38.181.21</string>
+        </array>
+    <key>KeepAlive</key>
+        <true/>
+    <key>RunAtLoad</key>
+        <true/>
 </dict>
 </plist>
