@@ -1,6 +1,6 @@
 # autossh in Macos
 Enable ssh service with launchctl in Macos (plist)
-(Autossh does not automatically restart ssh after sleep, so instead ssh is used.)
+(Autossh does not automatically restart ssh after sleeping/wakeup, so instead ssh is used.)
 
 ## Files
 Put com.user.sshtunnel.plist in ~/Library/LaunchAgents
